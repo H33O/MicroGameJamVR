@@ -40,13 +40,6 @@ public class SpawnPushBall : MonoBehaviour
             return;
         }
 
-        // Fallback si la position initiale n'a pas été capturée
-        GameObject existingBall = GameObject.FindWithTag(referenceTag);
-        if (existingBall != null)
-        {
-            Vector3 spawnPos = existingBall.transform.position + Vector3.up * verticalOffset;
-            Instantiate(pushBallPrefab, spawnPos, Quaternion.identity);
-        }
         else
         {
             // Dernier recours : spawner au-dessus de ce GameObject
