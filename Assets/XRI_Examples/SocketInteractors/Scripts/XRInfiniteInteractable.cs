@@ -1,3 +1,4 @@
+using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
@@ -71,6 +72,20 @@ namespace UnityEngine.XR.Content.Interaction
         {
             if (selectExitEventArgs.isCanceled || !active)
                 return;
+            if (selectExitEventArgs.isCanceled)
+            // Appliquer une vélocité de 500 dans l'axe "forward" de l'interactor sur l'objet relâché
+            // selectExitEventArgs.interactableObject est l'objet qui vient d'être relâché par l'interactor.
+            if (selectExitEventArgs.interactableObject is XRBaseInteractable releasedInteractable)
+            {
+                var rb = releasedInteractable.GetComponent<Rigidbody>();
+                if (rb != null && selectExitEventArgs.interactorObject != null)
+                {
+                    var forward = selectExitEventArgs.interactorObject.transform.forward;
+                    rb.velocity = forward * 500f;
+                    // Si vous voulez réinitialiser la vitesse angulaire :
+                    // rb.angularVelocity = Vector3.zero;
+                }
+            }
 
             InstantiateAndSelectInteractable();
         }

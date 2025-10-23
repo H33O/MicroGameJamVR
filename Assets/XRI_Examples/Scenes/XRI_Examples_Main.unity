@@ -7115,6 +7115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VelocityTrackedCube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4833345429137076177, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_InteractableSource
+      value: 
+      objectReference: {fileID: 51711252}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -7127,10 +7131,7 @@ PrefabInstance:
       addedObject: {fileID: 559280401}
     - targetCorrespondingSourceObject: {fileID: 4257412417454173071, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 559280400}
-    - targetCorrespondingSourceObject: {fileID: 4257412417454173071, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 559280399}
+      addedObject: {fileID: 559280402}
   m_SourcePrefab: {fileID: 100100000, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
 --- !u!4 &559280397 stripped
 Transform:
@@ -7142,33 +7143,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4257412417454173071, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
   m_PrefabInstance: {fileID: 559280396}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &559280399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559280398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 623c5848030e9674893bb3bb376834b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ProjectilePrefab: {fileID: 9031775881104408046, guid: 3976a13353f30c74891ad6e9052aaa18, type: 3}
-  m_StartPoint: {fileID: 400255586}
-  m_LaunchSpeed: 500
---- !u!114 &559280400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559280398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62fb9fb1177925e4b8a383be2b9db66c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &559280401
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7190,6 +7164,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &559280402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559280398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e395d7998bf4145ac13e3c4a263ae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwForce: 500
 --- !u!1 &563523501
 GameObject:
   m_ObjectHideFlags: 0
