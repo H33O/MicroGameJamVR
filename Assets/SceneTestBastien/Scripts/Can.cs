@@ -11,6 +11,7 @@ public class Can : MonoBehaviour
         if(collision.gameObject.GetComponent<Ground>() != null)
         {
             scoreData.score += 1;
+            Destroy(collision.gameObject);
         }
     }
 }
