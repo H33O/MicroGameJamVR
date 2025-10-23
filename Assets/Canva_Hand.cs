@@ -7,6 +7,6 @@ public class Canva_Hand : MonoBehaviour
    
     void Update()
     {
-        GetComponent()
+        
     }
 }
