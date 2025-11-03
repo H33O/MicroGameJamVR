@@ -11,6 +11,10 @@ TagManager:
   - Water
   - throwingball
   - pushball
+  - Rouge
+  - Bleu
+  - Vert
+  - Jaune
   layers:
   - Default
   - TransparentFX
