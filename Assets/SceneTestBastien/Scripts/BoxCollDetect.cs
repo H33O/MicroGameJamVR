@@ -6,37 +6,19 @@ using UnityEngine;
 public class BoxCollDetect : MonoBehaviour
 {
     [SerializeField] private QuestManager _questManager;
-    [SerializeField] private GameObject _ballPrefab;
     [SerializeField] private String _pillarTag;
-    [SerializeField] private Boolean _canVerif = false;
-    private GameObject _ball;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (_canVerif)
-        {
-            VerifGoodTag(_ball);
-        }
-    }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other == _ballPrefab)
+        if (other.gameObject.GetComponent<BallColored>() != null)
         {
-            _questManager.AddBallQuantity(1);
-            _ball = other.gameObject;
+            VerifGoodTag(other.gameObject);
         }
     }
     void OnTriggerExit(Collider other)
     {
-        if (other == _ballPrefab)
+        if (other.gameObject.GetComponent<BallColored>() != null)
         {
             _questManager.AddBallQuantity(-1);
         }
@@ -46,12 +28,7 @@ public class BoxCollDetect : MonoBehaviour
     {
         if (_pillarTag == objet.tag)
         {
-            _questManager.AddListBool(true);
+            _questManager.AddBallQuantity(1);
         }
-    }
-
-    public void UpdateCanVerif(Boolean state)
-    {
-        _canVerif = state;
     }
 }
