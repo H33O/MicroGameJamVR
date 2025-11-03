@@ -7,6 +7,7 @@ public class BoxCollDetect : MonoBehaviour
 {
     [SerializeField] private QuestManager _questManager;
     [SerializeField] private String _pillarTag;
+    
 
 
     void OnTriggerEnter(Collider other)
@@ -29,6 +30,7 @@ public class BoxCollDetect : MonoBehaviour
         if (_pillarTag == objet.tag)
         {
             _questManager.AddBallQuantity(1);
+            
         }
     }
 }

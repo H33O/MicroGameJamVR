@@ -7,6 +7,8 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     private int _ballQuantity = 0;
+    [SerializeField] private DoorOpening _DoorManager;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +31,8 @@ public class QuestManager : MonoBehaviour
     {
         if (_ballQuantity >= 4)
         {
-            Debug.Log("WIN");
+            _DoorManager.DoorOpen();
+            
         }
     }
 }
