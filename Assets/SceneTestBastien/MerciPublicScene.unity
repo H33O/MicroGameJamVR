@@ -179,17 +179,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c708557b24426a1488b10999da5ed229, type: 3}
---- !u!114 &76515288 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2100488562191329853, guid: 3a058dac150865b48aeb43f4e6f42971, type: 3}
-  m_PrefabInstance: {fileID: 9088497912265849036}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a6e639bd72679a47a15dd89d33f8f14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &110209836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,18 +1192,6 @@ PrefabInstance:
     - target: {fileID: 4304180212841411527, guid: 7a00f90d5f5cc054eb09ca22cfd2e697, type: 3}
       propertyPath: m_Name
       value: BouleRouge
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 7a00f90d5f5cc054eb09ca22cfd2e697, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.29581657
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 7a00f90d5f5cc054eb09ca22cfd2e697, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2958163
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 7a00f90d5f5cc054eb09ca22cfd2e697, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.29581657
       objectReference: {fileID: 0}
     - target: {fileID: 4304180212841411528, guid: 7a00f90d5f5cc054eb09ca22cfd2e697, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5295,18 +5272,6 @@ PrefabInstance:
       value: BouleJaune
       objectReference: {fileID: 0}
     - target: {fileID: 4304180212841411528, guid: 100f2e63789b3404986ddf1607c2ba28, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.29581657
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 100f2e63789b3404986ddf1607c2ba28, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2958163
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 100f2e63789b3404986ddf1607c2ba28, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.29581657
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 100f2e63789b3404986ddf1607c2ba28, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.86
       objectReference: {fileID: 0}
@@ -7014,7 +6979,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d90ccf6cfab5f714eb1d7cbd00074f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boxCollDetect: {fileID: 76515288}
 --- !u!4 &1635306131
 Transform:
   m_ObjectHideFlags: 0
@@ -7366,18 +7330,6 @@ PrefabInstance:
     - target: {fileID: 4304180212841411527, guid: 6805d86d4f5c72347abd6596de878ab1, type: 3}
       propertyPath: m_Name
       value: BouleBleue
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 6805d86d4f5c72347abd6596de878ab1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.29581657
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 6805d86d4f5c72347abd6596de878ab1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2958163
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 6805d86d4f5c72347abd6596de878ab1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.29581657
       objectReference: {fileID: 0}
     - target: {fileID: 4304180212841411528, guid: 6805d86d4f5c72347abd6596de878ab1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8267,18 +8219,6 @@ PrefabInstance:
     - target: {fileID: 4304180212841411527, guid: 663f73bf64ecf1547a9870dadf3a49f5, type: 3}
       propertyPath: m_Name
       value: BouleVerte
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 663f73bf64ecf1547a9870dadf3a49f5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.29581657
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 663f73bf64ecf1547a9870dadf3a49f5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2958163
-      objectReference: {fileID: 0}
-    - target: {fileID: 4304180212841411528, guid: 663f73bf64ecf1547a9870dadf3a49f5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.29581657
       objectReference: {fileID: 0}
     - target: {fileID: 4304180212841411528, guid: 663f73bf64ecf1547a9870dadf3a49f5, type: 3}
       propertyPath: m_LocalPosition.x
