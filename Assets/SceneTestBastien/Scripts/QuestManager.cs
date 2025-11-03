@@ -35,7 +35,7 @@ public class QuestManager : MonoBehaviour
     {
         if(_pillarsBallVerif.Count >= 4)
         {
-            
+           Debug.Log("WIN"); 
         }
     }
 
